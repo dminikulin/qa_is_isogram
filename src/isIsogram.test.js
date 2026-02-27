@@ -13,7 +13,7 @@ describe('isIsogram', () => {
 
   it(`should return true
     if all the letters in the string are different`, () => {
-    expect(isIsogram('polygraphic')).toBe(true);
+    expect(isIsogram('playground')).toBe(true);
   });
 
   it(`should return false
