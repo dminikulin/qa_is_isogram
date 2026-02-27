@@ -13,17 +13,23 @@ describe('isIsogram', () => {
 
   it(`should return true
     if all the letters in the string are different`, () => {
-    expect(isIsogram('playground')).toBe(true);
+    expect(isIsogram('playgrounds')).toBe(true);
   });
 
   it(`should return false
     if any of the letters in the string repeat`, () => {
-    expect(isIsogram('whoops')).toBe(false);
+    expect(isIsogram('look')).toBe(false);
   });
 
   it(`should return false
     if any of the letters in the string repeat
     while ignoring the letter case`, () => {
-    expect(isIsogram('Analogy')).toBe(false);
+    expect(isIsogram('Adam')).toBe(false);
+  });
+
+  it(`should return false
+    if any of the letters in the string repeat
+    while ignoring the letter case and their positions`, () => {
+    expect(isIsogram('Oops')).toBe(false);
   });
 });
